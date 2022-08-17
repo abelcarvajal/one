@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>    
+    
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="script.js"></script>
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body class="cuerpo">
+        <header>
+           <div class="cont-logo">
+                <h1><img src="Logo.png" alt="logo Alura" class="logo"></h1>
+           </div>
+        </header>
+        <main>
+            <section>
+                <form>
+                    
+                    <input type="text" placeholder="Ingrese el texto aquí" class="caja-texto" id="texto">
+                    
+                    <div class="cont-botones">
+                        <button type="button" id="botonEncriptar"> Encriptar</button>
+                        <button type="button" id="botonDesencriptar"> Desencriptar</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="resultado">
+
+                <div>
+
+                    <textarea name="cryptobox" id="textdecrypt" cols="30" rows="10" class="caja-texto" placeholder="Ningún mensaje fue encontrado"></textarea>
+                    <button type="button" id="botoncopy">Copiar</button>
+                    
+                </div>
+
+            </section>
+        </main>
+
+    </body>
+
+    <script>
+        var botcrypt = document.querySelector("#botonEncriptar");
+        botcrypt.onclick=tocript;
+
+        var botdecrypt = document.querySelector("#botonDesencriptar");
+        botdecrypt.onclick=todecript;
+
+        var botcopy = document.querySelector("#botoncopy");
+        botcopy.onclick=copiar;
+    </script>
+
+</html>

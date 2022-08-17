@@ -1,0 +1,158 @@
+.cuerpo{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F3F5FC;
+    }
+
+.cont-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.logo{
+    width: 120px;
+    height: 48px;
+}
+
+.caja-texto{
+        position: absolute;
+        border: none;
+        border-radius: 15px;
+        padding: 15px;
+        background-color: #F3F5FC;
+        box-shadow: 6px 6px 12px #ffffff,
+                    -6px -6px 12px #c5c5c5;
+        color: #0A3871;
+        font-family: 'Indie Flower', cursive;
+        line-height: 150%;
+        
+       }
+       
+    .caja-texto:focus {
+        outline-color: white;
+        
+       }
+form > .caja-texto{
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    font-size: 32px;
+    font-weight: 400;
+}
+    
+.cont-botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+}
+
+/*Estilo de botones https://uiverse.io/detail/cssbuttons-io/friendly-dragon-76 */
+
+button {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+   /* font-family: inherit; */
+    font-weight: 900;
+    color: white;
+    background-color: #0A3871;
+   }
+   
+   button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.800);
+    cursor: pointer;
+   }
+   
+   button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.800);
+   }
+   
+   button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+   
+   button::after {
+    background-color: #fff;
+   }
+   
+   button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+   }
+   button#botonDesencriptar{
+    color: #0A3871;
+    background: #d4d4d4;
+   }
+
+   .resultado {
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* shadow */
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+   }
+
+   textarea#textdecrypt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    resize: none;
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 20px;
+    top: 519px;
+    font-size: 20px;
+    
+   }
+
+   button#botoncopy{
+    color: #0A3871;
+    background: #d4d4d4;
+    position: absolute;
+    top: 844px;
+    left: 128px;
+   }

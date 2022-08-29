@@ -57,10 +57,10 @@ form > .caja-texto{
     padding: 0px;
     gap: 24px;
     position: absolute;
-    width: 680px;
+    width: 500px;
     height: 67px;
     left: 240px;
-    top: 885px;
+    top: 40em;
 }
 
 /*Estilo de botones https://uiverse.io/detail/cssbuttons-io/friendly-dragon-76 */
@@ -120,10 +120,10 @@ button {
 
    .resultado {
     position: absolute;
-    width: 400px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
+    width: 25em;
+    height: 45em;
+    left: 60em;
+    top: 2em;
 
     /* White */
 
@@ -135,24 +135,31 @@ button {
    }
 
    textarea#textdecrypt{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
     resize: none;
+    position: relative;
+    width: 336px;
+    height: 384px;
+    left: 1em;
+    top: 5em;
+    font-size: 20px;
+   }
+ 
+   .muneco{
     position: absolute;
     width: 336px;
-    height: 122px;
-    left: 20px;
-    top: 519px;
-    font-size: 20px;
-    
+    height: 384px;
+    left: 1em;
+    top: 1em;
    }
 
    button#botoncopy{
     color: #0A3871;
     background: #d4d4d4;
     position: absolute;
-    top: 844px;
-    left: 128px;
+    top: 36em;
+    left: 7em;
    }

@@ -4,8 +4,6 @@
 
 function tocript(){
 
-    var textoencriptado={[]}
-
     var texto = document.getElementById("texto").value.toLowerCase();
     var textoCript = texto.replace(/e/img, "enter");
     var textoCript = textoCript.replace(/i/img, "imes");
@@ -38,8 +36,12 @@ function copiar(){
 }
 function ocultotextarea(){
     var ocultarm = document.getElementById("imagen");
+    var ocultartext=document.getElementById("texto-muneco")
     var mostrart = document.getElementById("textdecrypt");
+    var mostrarb = document.getElementById("botoncopy")
     ocultarm.style.display = "none";
-    mostrart.style.display = 'flex';
+    ocultartext.style.display = "none";
+    mostrart.style.display = "flex";
+    mostrarb.style.display = "inline";
 
 }
